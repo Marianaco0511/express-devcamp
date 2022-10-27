@@ -3,9 +3,11 @@ const express = require('express')
 //2.Citar las dependencias necesarias 
 const dotenv = require('dotenv')
 const colors = require('colors')
+const connectDB = require('./config/db')
 const listEndpoint = require('express-list-endpoints')
 //los componentes de ruta
 const bootcampRoutes = require('./routes/BootcampRoutes')
+const userRoutes = require('./routes/UserRoutes')
 const courseRoutes = require('./routes/CourseRoutes')
 
 
@@ -18,10 +20,16 @@ console.log(process.env.PORT)
 //Crear el objeto aplicacion
 //para el servidor de desarrollo
 const app = express()
+//validemos el objeto de aplicacion
+//para recibir datos en formato json
+app.use(express.json())
 
+//conexion a db
+connectDB()
 
 //rutas de proyecto
 app.use('/api/v1/bootcamp' , bootcampRoutes)
+app.use('/api/v1/users' , userRoutes)
 app.use('/api/v1/course', courseRoutes)
 
 
