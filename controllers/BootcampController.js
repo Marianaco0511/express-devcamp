@@ -2,7 +2,7 @@
 //el objero de conexion:
 const sequelize = require('../config/seq')
 //Datatypes de sequelize
-const { DataTypes } = require('sequelize')
+const { DataTypes,ValidationError } = require('sequelize')
 //el modelo
 const UserModel =  require('../models/Bootcamp')
 

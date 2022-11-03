@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c861bd2b-9108-4462-9860-68d86177b4d1",
+		"_postman_id": "c170be8b-7b4f-4683-95aa-db5098bf9f96",
 		"name": "express-devcamp",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -208,7 +208,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/users/2",
+							"raw": "http://localhost:5000/api/v1/users/8",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -218,7 +218,7 @@
 								"api",
 								"v1",
 								"users",
-								"2"
+								"8"
 							]
 						}
 					},
@@ -237,7 +237,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\" : \"pao\",\r\n    \"email\": \"maria@misena.edu.co\"\r\n}"
+							"raw": "{\r\n    \"username\" : \"Mari\",\r\n    \"email\": \"maria@misena.edu.co\"\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:5000/api/v1/users/2",
@@ -291,7 +291,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\"username\" : \"Gustavo\",\r\n\"email\" : \"gubelma@misena.edu.co\",\r\n\"password\" : \" 123456\"\r\n}"
+							"raw": "{\r\n\"username\" : \"sofia\",\r\n\"email\" : \"gubelma@misena.edu.co\",\r\n\"password\" : \" 123456\"\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:5000/api/v1/users",
