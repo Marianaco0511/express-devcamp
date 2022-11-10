@@ -8,6 +8,7 @@ const listEndpoint = require('express-list-endpoints')
 //los componentes de ruta
 const bootcampRoutes = require('./routes/BootcampRoutes')
 const userRoutes = require('./routes/UserRoutes')
+const ReviewsRoutes = require('./routes/ReviewsRoutes')
 const courseRoutes = require('./routes/CourseRoutes')
 
 
@@ -31,6 +32,7 @@ connectDB()
 app.use('/api/v1/bootcamp' , bootcampRoutes)
 app.use('/api/v1/users' , userRoutes)
 app.use('/api/v1/course', courseRoutes)
+app.use('/api/v1/reviews', ReviewsRoutes)
 
 
 //endpoint de aplicacion 
